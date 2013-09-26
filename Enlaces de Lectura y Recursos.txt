@@ -1,1 +1,11 @@
+Ejemplo de una web al estilo "Pinterest"
 http://www.tutorialmonsters.com/diseno-al-estilo-de-pinterest-solo-con-columnas-css/
+
+Otro ejemplo mas completo, aca se pueden ver Divs y como se adaptan segun el la cantidad de texto
+para mi es un ejemplo basico de lo que el Ing nos pide, me imagino que le falta mucho mas!
+
+http://benholland.me/javascript/how-to-build-a-site-that-works-like-pinterest/
+
+aca el ejemplo del trabajo anterior: 
+
+http://labs.benholland.me/pinterest/
