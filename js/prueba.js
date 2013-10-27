@@ -14,7 +14,8 @@ var allHTMLTags = new Array();
 //funcion para obtener elemento por medio de la clase    
 function getElementByClass(block) {
     // Creamos un array con todas las etiquetas del HTML
-    
+    var ancho=screen.width;
+    var otro = ancho/4;
     var allHTMLTags=document.getElementsByTagName("*");
     // Las recorremos
     for (i=0; i<allHTMLTags.length; i++) {
@@ -23,8 +24,8 @@ function getElementByClass(block) {
         if (allHTMLTags[i].className=="block") {
             // Aqui ejecutamos lo que queramos a los elementos
             // que coincidan con la clase.
-            allHTMLTags[i].style.width="400px";
-         
+            allHTMLTags[i].style.width=otro+"px";
+
         }
     }
 }
