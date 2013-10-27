@@ -6,5 +6,4 @@ window.onload = tamano();
 
 function tamano(){
 document.getElementById('eldiv').style.width="300px";
-
 }
