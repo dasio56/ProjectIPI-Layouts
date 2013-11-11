@@ -4,18 +4,12 @@
 
 //window.onload = tamano();
 
-function tamano(){
-document.getElementById('eldiv').style.width="300px";
-alert("sigo funcionando");
-}
-
-
 var allHTMLTags = new Array();
 //funcion para obtener elemento por medio de la clase    
 function getElementByClass(block) {
     // Creamos un array con todas las etiquetas del HTML
-    var ancho=screen.width;
-    var otro = ancho/4;
+    var ancho = calculaAncho();
+    var otro = (ancho/4)-(ancho/12);
     var allHTMLTags=document.getElementsByTagName("*");
     // Las recorremos
     for (i=0; i<allHTMLTags.length; i++) {
@@ -25,9 +19,16 @@ function getElementByClass(block) {
             // Aqui ejecutamos lo que queramos a los elementos
             // que coincidan con la clase.
             allHTMLTags[i].style.width=otro+"px";
-
+            allHTMLTags[i].style.marginRight="2px";
         }
     }
 }
 
-
+  function calculaAncho(){
+  if (document.layers){
+    ancho = window.innerWidth;
+  } else {
+    ancho = document.body.clientWidth;
+  }
+  return ancho;
+}

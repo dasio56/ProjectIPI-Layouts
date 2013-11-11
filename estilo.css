@@ -1,0 +1,52 @@
+audio,video,img,input,select
+{
+    margin: 0 auto;
+    width: 90%;
+}
+
+button
+{
+  margin: 0 auto;  
+  margin: 40%;
+}
+
+#insElement
+{
+    width:100%;
+}
+
+#insElement form
+{
+    margin: 0 auto;
+    width:70%;
+}
+
+#insElement form select
+{
+    width:50%;
+}
+
+#insElement form textarea
+{
+    width:60%;
+}
+
+#insElement form textarea,#insElement form label,#insElement form select
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.block 
+{
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: absolute;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width:250px;
+}
