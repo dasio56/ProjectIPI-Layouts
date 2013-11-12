@@ -25,43 +25,15 @@ function setupBlocks()
 
 function positionBlocks() 
 {
-    j=0;
-    i=0;
-    alto=[];
     $('.block').each(function(){
-        h=i/(colCount-1);
-        if(h<=1)
-        {
-            var min = Array.min(blocks);
-            var index = $.inArray(min, blocks);
-            var leftPos = margin+(index*(colWidth+margin));
-            $(this).css({
-            'left':leftPos+'px'
-            });
-            blocks[index] = min+$(".block").outerHeight()+margin;
-            alto.push()    
-        }
-        else
-        {
-            var min = Array.min(blocks);
-            var index = $.inArray(min, blocks);
-            var leftPos = margin+(index*(colWidth+margin));
-            $(this).css({
+        var min = Array.min(blocks);
+        var index = $.inArray(min, blocks);
+        var leftPos = margin+(index*(colWidth+margin));
+        $(this).css({
             'left':leftPos+'px',
-            'top':alto[j]+20+'px'
-            });
-            blocks[index] = min+$(".block").outerHeight()+margin;
-            if(j<(colCount-1))
-            {
-                j++;
-            }
-            else
-            {
-                j = 0;
-            }
-            alto[j]=alto[j]+$(".block").outerHeight()+margin
-        }
-        i++;
+            'top':min+100+'px'
+        });
+        blocks[index] = min+$(this).outerHeight()+margin;
     });
 }
 
