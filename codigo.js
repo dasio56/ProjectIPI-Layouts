@@ -2,8 +2,28 @@ $(window).on("load",inicio);
 
 function inicio()
 {
+    obtener();
     ponerBlocks();
-    $(window).on("resize",ponerBlocks)
+    $(window).on("resize",ponerBlocks);
+    $("#insertar").on("click",insertar);
+}
+
+function insertar()
+{
+    var elemento = $("#elementos").val();
+    var contenido = $("#contenido").val();
+    $.get("insertar.php",{elementos:elemento,contenido:contenido},obtener);
+}
+
+function obtener(datos)
+{
+    $.get("obtenerElementos.php",agregar);
+}
+
+function agregar(datos)
+{
+    $("#contenedor").html(datos);
+    ponerBlocks();
 }
 
 function ponerBlocks() 
@@ -33,7 +53,7 @@ function positionBlocks()
         var leftPos = margin+(index*(colWidth+margin));
         $(this).css({
             'left':(spaceLeft+leftPos)+'px',
-            'top':(min+150)+'px'
+            'top':(min+200)+'px'
         });
         blocks[index] = min+$(this).outerHeight()+margin;
     });

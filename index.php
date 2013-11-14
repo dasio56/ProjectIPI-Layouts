@@ -12,21 +12,31 @@
             <p>
                 <b>Layout Dinamico</b>
             </p>    
-
             <p>
                 <label for="">Tipo Elemento: </label>
-                <select name="elementos" id="elementos"></select>
+                <select name="elementos" id="elementos">
+                    <option value="audio">audio</option>
+                    <option value="video">video</option>
+                    <option value="a">enlace</option>
+                    <option value="img">imagen</option>
+                    <option value="section">seccion</option>
+                    <option value="article">articulo</option>
+                    <option value="p">parrafo</option>
+                    <option value="form">formulario</option>
+                    <option value="input">caja de texto</option>
+                    <option value="button">boton</option>   
+                </select>
             </p>
             <p>
                 <label for="">Contenido: </label>
-                <textarea name="contenido" id="contenido" placeholder="Ingrese el texto del contenedor, url de la imagen, audio o video"></textarea>
+                <textarea name="contenido" id="contenido" placeholder="Ingrese el texto del contenedor, url de la imagen, audio, video o html"></textarea>
             </p>
-            
+            <button id="insertar">Insertar</button>
         </form>
         <img src="images/minip2.png" id="imgMinerva">
 
     </aside>
-
+    <div id="contenedor"></div>
     <div class="block">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ipsum amet aspernatur pariatur ipsa facere eum nulla. Aliquid, quod, sapiente illo architecto neque aspernatur ducimus culpa laudantium autem temporibus eaque?
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil nemo rem deleniti excepturi! Aspernatur, ea, recusandae, iste, tenetur dolore harum labore tempore quis placeat inventore fugit libero quod quo.

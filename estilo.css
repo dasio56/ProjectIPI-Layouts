@@ -7,10 +7,9 @@ body{
     background-color: #eee;
 }
 
-button
+#insElement form button
 {
-  margin: 0 auto;  
-  margin: 40%;
+padding-left: 2%;
 }
 
 
@@ -34,7 +33,7 @@ button
 
 #insElement form
 {
-    /* margin: 0 auto; */
+    text-align: center;
     width:50%;
 }
 

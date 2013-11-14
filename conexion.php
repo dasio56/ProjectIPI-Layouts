@@ -19,10 +19,10 @@ class Conexion {
         return $con;        
     }
     
-    public function cud($query)
+    public function cud($query,$nameQuery,$parametros)
     {
-        
-        if ($consulta = pg_query($this->objConexion(), $query) == TRUE)
+        pg_prepare($this->objConexion(),$nameQuery,$query);
+        if (pg_execute($this->objConexion(),$nameQuery,$parametros) == TRUE)
         {
             return true;
         }  
@@ -32,10 +32,24 @@ class Conexion {
         }   
     }
     
-    public function extraer($query)
+    public function extraer($query,$nameQuery,$parametros)
     {
-        $respuesta=  pg_query($this->objConexion(),$query);
+        pg_prepare($this->objConexion(),$nameQuery,$query);
+        $respuesta=  pg_execute($this->objConexion(),$nameQuery,$parametros);
         return $respuesta;
+    }
+
+    public function insertarElemento($elemento,$contenido)
+    {
+        $sql = "insert into elementos(tipoelemento,contenido) values($1,$2)";
+        $parametros = array($elemento,$contenido);
+        $this->cud($sql,"insertar",$parametros);
+    }
+
+    public function obtenerElementos()
+    {
+        $sql = "select idelemento,tipoelemento,contenido from elementos";
+        return $this->extraer($sql,"obtener",array());
     }
 }
 ?>
