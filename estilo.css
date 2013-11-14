@@ -1,7 +1,10 @@
-audio,video,img,input,select
+audio,video,input,select,img
 {
-    margin: 0 auto;
-    width: 90%;
+    margin: 0 auto; 
+    width: 95%;
+ }   
+body{
+    background-color: #eee;
 }
 
 button
@@ -10,16 +13,31 @@ button
   margin: 40%;
 }
 
+
+#imgMinerva{
+   width: 15%;
+   margin-left: 5%;
+}
+
+#imgMinerva,#formulario1,#entrega{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #insElement
 {
-    width:100%;
+    width:60%;
+    background-color: #e6e6e6;
+    padding: 5px 5px 5px 50px;
+    margin: 0 auto;
 }
 
 #insElement form
 {
-    margin: 0 auto;
-    width:70%;
+    /* margin: 0 auto; */
+    width:50%;
 }
+
 
 #insElement form select
 {
@@ -28,7 +46,7 @@ button
 
 #insElement form textarea
 {
-    width:60%;
+    width:80%;
 }
 
 #insElement form textarea,#insElement form label,#insElement form select
@@ -39,7 +57,7 @@ button
 
 .block 
 {
-    background: #eee;
+    background: white;
     border: 1px solid #ddd;
     padding: 20px;
     position: absolute;

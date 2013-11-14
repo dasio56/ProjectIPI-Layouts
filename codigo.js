@@ -2,20 +2,22 @@ $(window).on("load",inicio);
 
 function inicio()
 {
-    setupBlocks();
-    $(window).on("resize",setupBlocks)
+    ponerBlocks();
+    $(window).on("resize",ponerBlocks)
 }
 
-function setupBlocks() 
+function ponerBlocks() 
 {
     colCount = 0;
     colWidth = 0;
     margin = 20;
     windowWidth = 0;
+    spaceLeft = 0;
     blocks = [];
     windowWidth = $(window).width();
     colWidth = $('.block').outerWidth();
     colCount = Math.floor(windowWidth/(colWidth+margin));
+    spaceLeft = (windowWidth - ((colWidth*(colCount))+(margin*(colCount-1)))) / 2;
     for(var i=0;i<colCount;i++) 
     {
         blocks.push(margin);
@@ -30,8 +32,8 @@ function positionBlocks()
         var index = $.inArray(min, blocks);
         var leftPos = margin+(index*(colWidth+margin));
         $(this).css({
-            'left':leftPos+'px',
-            'top':min+100+'px'
+            'left':(spaceLeft+leftPos)+'px',
+            'top':(min+150)+'px'
         });
         blocks[index] = min+$(this).outerHeight()+margin;
     });

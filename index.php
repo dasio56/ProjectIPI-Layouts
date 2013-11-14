@@ -7,7 +7,12 @@
 </head>
 <body>
     <aside id="insElement">
-        <form action="insertar.php" method="post">
+
+        <form action="insertar.php" method="post" id="formulario1">
+            <p>
+                <b>Layout Dinamico</b>
+            </p>    
+
             <p>
                 <label for="">Tipo Elemento: </label>
                 <select name="elementos" id="elementos"></select>
@@ -16,11 +21,38 @@
                 <label for="">Contenido: </label>
                 <textarea name="contenido" id="contenido" placeholder="Ingrese el texto del contenedor, url de la imagen, audio o video"></textarea>
             </p>
+            
         </form>
+        <img src="images/minip2.png" id="imgMinerva">
+
     </aside>
+
+    <div class="block">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ipsum amet aspernatur pariatur ipsa facere eum nulla. Aliquid, quod, sapiente illo architecto neque aspernatur ducimus culpa laudantium autem temporibus eaque?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil nemo rem deleniti excepturi! Aspernatur, ea, recusandae, iste, tenetur dolore harum labore tempore quis placeat inventore fugit libero quod quo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deleniti molestias ipsum necessitatibus magnam sed minus doloribus omnis unde doloremque. Incidunt libero facere ipsa iusto beatae numquam illo vitae facilis!
+    </div>
+        
+    <article class="block">
+        <img src="images/ola.jpg">
+        esta es una descripcion de la imagen
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, repellendus, fugit, dolor voluptatum nulla illum vitae dolores accusantium minus dignissimos quas harum fugiat praesentium doloribus aliquid unde facilis itaque ex.
+    </article>
+    
+        <article class="block">
+        este es el primero 
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, assumenda, sequi, impedit, tempora consectetur nisi veniam dicta aliquid error aperiam expedita aspernatur tenetur ullam accusamus suscipit sit perferendis. Corporis, amet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ipsam, nostrum, repellendus, quia blanditiis quaerat ipsa natus laudantium optio explicabo ea numquam nesciunt quam quidem sit cupiditate saepe. Id, maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus optio quia iusto quae facilis accusantium minus cumque veritatis.
+    </article>
     <div class="block">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fugit, id, alias vel provident magni nulla maxime iure delectus temporibus quibusdam minima nemo eveniet cum consequatur eaque aperiam rerum illum.
     </div>
+    <section class="block">
+        <img src="images/SL.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis reprehenderit similique ipsa fugit sapiente enim mollitia ut facilis quo quisquam adipisci ipsam sunt voluptates praesentium atque at in quod!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, labore voluptatum porro error reprehenderit. Tempora, modi, possimus similique consectetur in nulla repudiandae nisi vero necessitatibus recusandae porro sapiente expedita error!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, perferendis, aspernatur, minima eligendi dolor consequuntur quaerat ratione ducimus magnam porro delectus laudantium vitae accusantium enim amet vel laborum dolore. Nostrum!
+    </section>
     <div class="block">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, provident, quaerat, sint, aliquid quis quos alias magnam illum eligendi eveniet modi corporis in consequatur sequi aut. Facere, sapiente perspiciatis modi?
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, iure laudantium aliquid consequatur explicabo! Eveniet, nostrum, animi, alias sit perspiciatis eligendi laudantium molestiae quis maiores ipsam soluta hic mollitia tenetur!
@@ -30,27 +62,13 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, recusandae, perferendis error officiis quod nisi ea laudantium corporis quo cum repellendus quia et enim ipsam maiores labore voluptatibus quos at!
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum, sint ullam soluta totam nesciunt suscipit repudiandae non dolore asperiores corporis commodi laudantium explicabo adipisci atque eligendi assumenda placeat earum!
     </div>
+  
     <div class="block">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, eius, maiores, non veniam facilis autem eligendi mollitia aliquam tempora officia sapiente assumenda. A, perferendis repudiandae mollitia at et saepe.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dignissimos, ipsam commodi earum iure nihil aliquid veniam natus tenetur totam! Magnam, velit quos sapiente numquam accusantium repellat ratione fugit ab.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, aliquid magnam cumque ducimus aperiam cupiditate voluptates deleniti nemo architecto cum in doloribus eaque deserunt unde culpa atque consectetur ea reprehenderit.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ullam rerum at doloremque minus delectus nostrum excepturi officiis aut dolor iure tempora ducimus illo impedit possimus aliquid unde odio exercitationem.
+        <img src="images/entrada.jpg">
+        Entrada de la Universidad de El Salvador Facultad Multidiplinaria de Occidente
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, nemo, optio, unde suscipit libero tempore praesentium consequuntur quis quisquam delectus nulla quae autem perspiciatis commodi voluptate doloremque at aspernatur ex?
     </div>
-    <div class="block">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolorum, asperiores, dolor minus veniam id nisi provident sit ut magnam alias quisquam hic totam facere modi quaerat nobis corrupti harum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, consequatur, consectetur, veniam repellendus ipsum distinctio nemo neque ipsa laborum expedita iure id totam nisi facilis natus corporis non cumque consequuntur.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, blanditiis, aliquam sapiente neque dolore labore at accusamus recusandae dolorum nesciunt harum fugit dolor necessitatibus officia officiis qui quasi laudantium nostrum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, aperiam, ducimus, reprehenderit laudantium nemo animi dolorem perferendis quam cum quia aliquam nulla dolorum reiciendis ipsum voluptatum fugit molestias illum similique.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, numquam, praesentium, libero facere veniam ipsum quia nulla minus qui doloribus totam unde magnam officiis itaque aperiam assumenda laudantium saepe culpa.
-    </div>
-    <div class="block">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, exercitationem, illo, quam illum consequatur obcaecati ipsum quisquam impedit delectus repellendus totam natus eveniet eos neque ipsa mollitia minus veritatis ducimus?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, accusamus, sunt, saepe, voluptatibus rerum harum voluptatem blanditiis facilis laudantium minus nobis velit dolore sit molestias doloribus ducimus sint repudiandae reiciendis!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, iusto, voluptas quam dicta reprehenderit asperiores ad dolorum iure quasi cumque nemo numquam omnis vel? Ad ex ratione amet explicabo sequi!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, soluta illum atque reprehenderit sequi iure possimus laboriosam? Quos, eaque deleniti consequuntur nulla. Aliquid doloribus aperiam cum voluptatibus quas nihil sit?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, similique, quo odit vitae ipsam pariatur magnam laboriosam doloremque voluptate perspiciatis. Omnis, quos incidunt exercitationem aliquid quam in qui quo quaerat.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui aliquam facere accusamus impedit iure ad repellendus molestias suscipit cum. Omnis, nihil, sequi repellendus magni recusandae suscipit dolores cupiditate assumenda.
-    </div>
+  
     <!--<?php
         //include("obtenerElementos.php");
     ?>-->
