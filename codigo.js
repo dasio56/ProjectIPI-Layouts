@@ -6,13 +6,36 @@ function inicio()
     ponerBlocks();
     $(window).on("resize",ponerBlocks);
     $("#insertar").on("click",insertar);
+    $("#elementos").on("change",mostrarUrl);
+}
+
+function mostrarUrl()
+{
+    var elemento = $("#elementos").val();
+    if(elemento == "audio")
+    {
+        $("#purl").show();
+    }
+    else if(elemento == "video")
+    {
+        $("#purl").show();
+    }
+    else if(elemento == "img")
+    {
+        $("#purl").show();
+    }
+    else
+    {
+        $("#purl").hide();
+    }
 }
 
 function insertar()
 {
     var elemento = $("#elementos").val();
     var contenido = $("#contenido").val();
-    $.get("insertar.php",{elementos:elemento,contenido:contenido},obtener);
+    var url = $("#url").val();
+    $.get("insertar.php",{elementos:elemento,content:contenido,url:url},obtener);
 }
 
 function obtener(datos)
@@ -53,10 +76,11 @@ function positionBlocks()
         var leftPos = margin+(index*(colWidth+margin));
         $(this).css({
             'left':(spaceLeft+leftPos)+'px',
-            'top':(min+200)+'px'
+            'top':(min+225)+'px'
         });
         blocks[index] = min+$(this).outerHeight()+margin;
     });
+    $(".block").draggable();
 }
 
 // Function to get the Min value in Array

@@ -7,34 +7,37 @@
 </head>
 <body>
     <aside id="insElement">
-
-        <form action="insertar.php" method="post" id="formulario1">
+       <div id="form">
             <p>
                 <b>Layout Dinamico</b>
             </p>    
             <p>
-                <label for="">Tipo Elemento: </label>
+                <label>Tipo Elemento: </label>
                 <select name="elementos" id="elementos">
+                    <option value="section">seccion</option>
                     <option value="audio">audio</option>
                     <option value="video">video</option>
-                    <option value="a">enlace</option>
                     <option value="img">imagen</option>
-                    <option value="section">seccion</option>
                     <option value="article">articulo</option>
+                    <option value="div">contenedor</option>
                     <option value="p">parrafo</option>
                     <option value="form">formulario</option>
                     <option value="input">caja de texto</option>
                     <option value="button">boton</option>   
                 </select>
             </p>
-            <p>
-                <label for="">Contenido: </label>
-                <textarea name="contenido" id="contenido" placeholder="Ingrese el texto del contenedor, url de la imagen, audio, video o html"></textarea>
+            <p id="purl" hidden >
+                <label>URL: </label>
+                <input type='text' id='url' placeholder='ingrese la url'>
             </p>
-            <button id="insertar">Insertar</button>
-        </form>
+            <p>
+            <label for="">Contenido: </label>
+            <textarea name="contenido" id="contenido" placeholder="Ingrese el texto del contenedor o html"></textarea>
+            </p>
+            <button id="insertar">Insertar</button>   
+       </div>
+        
         <img src="images/minip2.png" id="imgMinerva">
-
     </aside>
     <div id="contenedor"></div>
     <div class="block">
@@ -78,11 +81,8 @@
         Entrada de la Universidad de El Salvador Facultad Multidiplinaria de Occidente
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, nemo, optio, unde suscipit libero tempore praesentium consequuntur quis quisquam delectus nulla quae autem perspiciatis commodi voluptate doloremque at aspernatur ex?
     </div>
-  
-    <!--<?php
-        //include("obtenerElementos.php");
-    ?>-->
     <script src='jquery.js'></script>
+    <script src="jquery-ui.js"></script>
     <script src='codigo.js'></script>
 </body>
 </html>

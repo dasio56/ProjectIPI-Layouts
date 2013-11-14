@@ -39,16 +39,16 @@ class Conexion {
         return $respuesta;
     }
 
-    public function insertarElemento($elemento,$contenido)
+    public function insertarElemento($elemento,$contenido,$url)
     {
-        $sql = "insert into elementos(tipoelemento,contenido) values($1,$2)";
-        $parametros = array($elemento,$contenido);
+        $sql = "insert into elementos(tipoelemento,contenido,url) values($1,$2,$3)";
+        $parametros = array($elemento,$contenido,$url);
         $this->cud($sql,"insertar",$parametros);
     }
 
     public function obtenerElementos()
     {
-        $sql = "select idelemento,tipoelemento,contenido from elementos";
+        $sql = "select idelemento,tipoelemento,contenido,url from elementos";
         return $this->extraer($sql,"obtener",array());
     }
 }
